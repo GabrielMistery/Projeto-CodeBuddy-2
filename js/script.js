@@ -53,7 +53,7 @@ var top = window.scrollY
 console.log(top);
 var img = document.getElementById("img");
   if (top > 80) {
-    document.getElementById("header").style.padding = "1px";
+    document.getElementById("header").style.padding = "3rem";
     document.getElementById("header").style.backgroundColor = "#000000";
     document.getElementById("header").style.boxShadow = "0 0 10px 0px #e2e2e2";
     document.getElementById("menu").style.top = "10px";

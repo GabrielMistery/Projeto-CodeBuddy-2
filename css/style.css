@@ -379,7 +379,7 @@ label{
 }
 
 .h2class{
-    position: absolute;
+    position: relative;
     top: 102px;
     text-align: center;
     width: 1282px ;
@@ -475,12 +475,13 @@ z-index: -1000;
     padding:10px;
     width: 200px;
     height: 200px;
-
+    box-shadow: 0 0 4px 0px #e2e2e2;
     
 }
 
 #formulario{
     position: relative;
+    
 
 }
 
