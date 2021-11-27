@@ -54,18 +54,16 @@ console.log(top);
 var img = document.getElementById("img");
   if (top > 80) {
     document.getElementById("header").style.padding = "1px";
-    document.getElementById("header").style.backgroundColor = "black";
+    document.getElementById("header").style.backgroundColor = "#000000";
     document.getElementById("header").style.boxShadow = "0 0 10px 0px #e2e2e2";
-    document.getElementById("li1").style.top = "10px";
+    document.getElementById("menu").style.top = "10px";
     img.src ="../imagens/LOGO123.png";
   } else {
     img.src ="../imagens/LOGO12.png";
-    document.getElementById("li1").style.top = "40px";
-    document.getElementById("header").style.padding = "2rem";
+    document.getElementById("menu").style.top = "20px";
+    document.getElementById("header").style.padding = "5rem";
     document.getElementById("header").style.backgroundColor = "#0099ff";
     document.getElementById("header").style.boxShadow = "0 0 0px 0px #e2e2e2";
-    
-
 
   }
 }

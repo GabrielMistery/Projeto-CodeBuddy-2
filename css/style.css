@@ -4,14 +4,14 @@ body{
   }
 
 .div2ondas{
-    background-color: #0099ff;
+    /* background-color: #0099ff; */
     position: absolute;
     top: 200px;
 }
   
   #header{
-    background-color: #0099ff;
-    padding:2rem;
+    background-color: #0099ff; 
+    padding:5rem;
     /*box-shadow: 0 0 10px 0px #e2e2e2;*/
 }
 
@@ -30,22 +30,15 @@ body{
 
 #menu{
     position: absolute;
-    top:0px;
-    right: 0px;
+    top:20px;
+    right: 100px;
     padding:10px;
     display: flex;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     
 }
-#li1{
-    top:40px;
-}
 
-#menu li{
-    margin-right: 30px;
-    
-}
 
 #menu li a{
     color: white;
@@ -68,7 +61,7 @@ body{
     display: block;
 }
   
-#menu #li1 {
+#menu .li-class {
     border-radius: 4px;
     font-size: inherit;
     padding: 0.25em 0.5em;
@@ -79,8 +72,8 @@ body{
 
 
 
-#menu #li1::after,
-#menu #li1::before {
+#menu .li-class::after,
+#menu .li-class::before {
 content: "" ;    
 position:absolute;
 bottom: 0px;    
@@ -91,39 +84,28 @@ transition: transform 0.3s ease-in-out;
 z-index: -1000;
 }
 
-#menu #li1::before{
+#menu .li-class::before{
     border-left: 1px solid white;
     border-right: 1px solid white;
     transform: scaleY(0);
 }
 
-#menu #li1::after{
+#menu .li-class::after{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     transform: scaleX(0);
 }
 
-#menu #li1:hover::before{
+#menu .li-class:hover::before{
     transform: scaleY(1);
 }
 
-#menu #li1:hover::after{
+#menu .li-class:hover::after{
     transform: scaleY(1);
 }
 
-#menu #i1 {
-    border-radius: 4px;
-    font-size: inherit;
-    padding: 0.25em 0.5em;
-    border-radius: 4px;
-    box-shadow: 0 0 4px 0px #e2e2e2;
-    position:relative; 
-}
-
-
-
-#menu #i1::after,
-#menu #i1::before {
+#menu .li-class2::after,
+#menu .li-class2::before {
 content: "" ;    
 position:absolute;
 bottom: 0px;    
@@ -134,39 +116,28 @@ transition: transform 0.3s ease-in-out;
 z-index: -1000;
 }
 
-#menu #i1::before{
+#menu .li-class2::before{
     border-left: 1px solid white;
     border-right: 1px solid white;
     transform: scaleY(0);
 }
 
-#menu #i1::after{
+#menu .li-class2::after{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     transform: scaleX(0);
 }
 
-#menu #i1:hover::before{
+#menu .li-class2:hover::before{
     transform: scaleY(1);
 }
 
-#menu #i1:hover::after{
+#menu .li-class2:hover::after{
     transform: scaleY(1);
 }
 
-#menu #i2 {
-    border-radius: 4px;
-    font-size: inherit;
-    padding: 0.25em 0.5em;
-    border-radius: 4px;
-    box-shadow: 0 0 4px 0px #e2e2e2;
-    position:relative; 
-}
-
-
-
-#menu #i2::after,
-#menu #i2::before {
+#menu .li-class3::after,
+#menu .li-class3::before {
 content: "" ;    
 position:absolute;
 bottom: 0px;    
@@ -177,38 +148,48 @@ transition: transform 0.3s ease-in-out;
 z-index: -1000;
 }
 
-#menu #i2::before{
+#menu .li-class3::before{
     border-left: 1px solid white;
     border-right: 1px solid white;
     transform: scaleY(0);
 }
 
-#menu #i2::after{
+#menu .li-class3::after{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     transform: scaleX(0);
 }
 
-#menu #i2:hover::before{
+#menu .li-class3:hover::before{
     transform: scaleY(1);
 }
 
-#menu #i2:hover::after{
+#menu .li-class3:hover::after{
     transform: scaleY(1);
 }
 
 
+.li-class{
+    position: relative;
+    margin-right: 40px;
+    right: 20px;
+}
 
-#i2{
-    position: absolute;
+.li-class2{
+    position: relative;
     left: -50px;
-    top: 26px;
+    top: 10px;
+    max-width: 70px;
+    height: 30px;
+    
 }
 
-#i1{
-    position:absolute ;
-    top: 20px;
+.li-class3{
+    position: relative;
+    top: 10px;
     left:-50px;
+    max-width: 70px;
+    height: 30px;
 }
 
 
@@ -279,7 +260,7 @@ button{
 
 
   img{
-      
+      position: absolute;
       left: 0%;
       top: 0%;
       
@@ -487,12 +468,19 @@ z-index: -1000;
     transform: scaleY(1);
 }
 
-/*#divid{
+#form{
     position: absolute;
     left: 50%;
     transform:translateX(-50%);
-    background-color:red;
     padding:10px;
+    width: 200px;
+    height: 200px;
+
     
 }
-*/
+
+#formulario{
+    position: relative;
+
+}
+
